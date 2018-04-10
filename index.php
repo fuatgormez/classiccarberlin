@@ -7,7 +7,7 @@ include 'App/system.inc.php';
                 {
                       require THEME."/index.php";
                 } else{
-                    require "theme/kapaliazravildan/index.php";
+                    require "theme/kapali/index.php";
                 }
 
 
