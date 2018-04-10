@@ -21,7 +21,7 @@
 
                 <!-- Main -->
                 <div id="main-content">
-                    <h2 class="title-heading"> <?=$langDB['LANG_NEWS'];?> </h2>
+                    <h2 class="title-heading"> <?=$langDB['LANG_CATEGORIES'];?> </h2>
 
                     <?php
 
