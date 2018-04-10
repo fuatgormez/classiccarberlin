@@ -7,7 +7,7 @@ class Database{
 	protected $datab;
 //========================================================================================================
 	// connect to db
-	public function __construct($username = "root", $password = "", $host = "localhost", $dbname = "RENTECLASSICCARBERLIN", $options = []){
+	public function __construct($username = "root", $password = "", $host = "localhost", $dbname = "CLASSICCARBERLIN", $options = []){
 		$this->isConn = TRUE;
 		try {
 			$this->datab = new PDO("mysql:host={$host};dbname={$dbname};charset=utf8", $username, $password, $options);
@@ -76,8 +76,6 @@ class Database{
 	public function lastInsertId(){
         return $this->datab->lastInsertId();
     }
-
-
 //========================================================================================================
 }## Connection End##
 //========================================================================================================

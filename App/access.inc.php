@@ -4,7 +4,7 @@ error_reporting(E_ALL | E_ERROR | E_WARNING | E_PARSE | E_NOTICE | E_CORE_ERROR 
 @ini_set('display_errors', true);
 @ini_set('html_errors', true);
 //========================================================================================================
-
+$callBackUrl = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : "index.php";
 //========================================================================================================
 
 $db = new Database();
