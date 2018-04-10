@@ -7,11 +7,10 @@ include 'App/system.inc.php';
                 {
                       require THEME."/index.php";
                 } else{
-                    require "theme/closed/index.php";
+                    require "theme/closed/maho/index.php";
                 }
 
 
         } catch (Exception $e) {
           die($langDB['LANG_CATCH_PROBLEM']." ". $e->getMessage());
     }
-
