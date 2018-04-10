@@ -3,8 +3,8 @@ $link = $_GET['link'];
 
         try{
 
-                $db = new Database();
-                $carDetails = $db->getRow("SELECT * FROM ".TABLE_PREFIX."TBL_CARS WHERE SLUG=? AND STATUS=?",[$link,"Y"]);
+            $db = new Database();
+            $carDetails = $db->getRow("SELECT * FROM ".TABLE_PREFIX."TBL_CARS WHERE SLUG=? AND STATUS=?",[$link,"Y"]);
 
                 //$carQuery = $db->getRows("SELECT image.IMAGE as IMAGE, image.THUMBNAIL as THUMBNAIL FROM ".TABLE_PREFIX."TBL_IMAGES as images LEFT JOIN ".TABLE_PREFIX."TBL_IMAGE as image ON image.IMAGESID=images.CARID WHERE CARID=?",[$ID]);
 
@@ -111,7 +111,7 @@ $link = $_GET['link'];
                         if ($carQuery !=NULL){
 
                             foreach ($carQuery as $carQueryshow){
-                                if ($carQueryshow !=NULL && $carQueryshow['CARSTATUS']!='N'){
+                                if ($carQueryshow !=NULL && $carQueryshow['CARSTATUS']!='N' && $carQueryshow['SLUG'] != $link){
                                     echo '
                                     <li>
                                         <h2><a href="'.URL.'/car/'.$carQueryshow['SLUG'].'.html">'.$carQueryshow['CARTITLE'].'</a></h2>

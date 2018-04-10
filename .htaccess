@@ -23,6 +23,7 @@ RewriteRule ^notices.* index.php?do=notices [NC]
 RewriteRule ^news.* index.php?do=news [NC]
 RewriteRule ^pages.* index.php?do=pages [NC]
 RewriteRule ^cars.* index.php?do=cars [NC]
+RewriteRule ^categories.* index.php?do=cats [NC]
 
 
 RewriteRule ^tr.* App/language.inc.php?lang=tr [NC]

@@ -42,8 +42,8 @@
         <script type='text/javascript' src='<?=THEME_URL;?>/js/the-tooltip/the-tooltip.min.js'></script>
 
         <!-- Sweetalert -->
-        <link rel="stylesheet" type="text/css" href="<?=URL;?>/App/sweetalert-master/dist/sweetalert.css">
-        <script src="<?=URL;?>/App/sweetalert-master/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="<?=URL;?>/assets/plugins/sweetalert-master/dist/sweetalert.css">
+        <script src="<?=URL;?>/assets/plugins/sweetalert-master/dist/sweetalert.min.js"></script>
 
 
         <!--[if lt IE 9]>

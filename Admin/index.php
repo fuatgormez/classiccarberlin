@@ -56,8 +56,8 @@ if(@$_SESSION['lang'] == "tr")
     <link href="css/plugins/lightbox2/css/lightbox.css" rel="stylesheet">
 
     <!-- Sweetalert -->
-    <link rel="stylesheet" type="text/css" href="../App/sweetalert-master/dist/sweetalert.css">
-    <script src="../App/sweetalert-master/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/sweetalert-master/dist/sweetalert.css">
+    <script src="../assets/plugins/sweetalert-master/dist/sweetalert.min.js"></script>
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">

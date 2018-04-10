@@ -38,6 +38,10 @@ if (@$_COOKIE['FG_Manager_UserName'] != NULL) {
         $do = filter_input(INPUT_GET, 'do', FILTER_SANITIZE_STRING);
         Switch ($do){
 
+            case "cats":
+                require_once THEME."/reservation.php";
+                require_once THEME."/cats.php";
+                break;
             case "cars":
                 require_once THEME."/reservation.php";
                 require_once THEME."/cars.php";

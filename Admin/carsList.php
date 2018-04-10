@@ -6,7 +6,7 @@
         <span class="label label-quay"><?=$langDB['LANG_ALL_LIST']?></span>
     </div>
     <div class="col-lg-3">
-        <h2 class="text-quay"><a href="index.php?page=carAdd">Yeni Araba Ekle <i class="fa fa-plus animated flip"></i></a></h2>
+        <h2 class="text-quay"><a href="index.php?page=carAdd"><?=$langDB['LANG_ADMIN_MENU_CAR_ADD'];?><i class="fa fa-plus animated flip"></i></a></h2>
     </div>
 </div>
 

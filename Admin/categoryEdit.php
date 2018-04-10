@@ -20,13 +20,13 @@ if (isset($_POST['submit'])){
             $querySlug = $db->getRow("SELECT ID,SLUG FROM ".TABLE_PREFIX."TBL_CATEGORIES WHERE ID=?",[$ID]);
 
                 if ($querySlug['ID'] !=$ID){
-                    return sweetalert("Bu isimle daha önceden category oluşturulmuş lütfen bilgilerinizi kontrol ediniz!",$langDB['LANG_REDIRECTING'],"warning","index.php?page=categoriesList","3000");
+                    return sweetalert($langDB['LANG_ERROR_NAME'],$langDB['LANG_REDIRECTING'],"warning","$callBackUrl","3000");
                     exit();
                 }
 
                 if ($querySlug['ID'] == $parentId)
                 {
-                    return sweetalert("Kendini kendine ekleyemezsin",$langDB['LANG_REDIRECTING'],"warning","'.$callBackUrl.'","31000");
+                    return sweetalert($langDB['LANG_ERROR_SAME_CATEGORY'],$langDB['LANG_REDIRECTING'],"warning","$callBackUrl","3000");
                     exit();
                 }
 
