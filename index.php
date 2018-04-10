@@ -12,6 +12,6 @@ include 'App/system.inc.php';
 
 
         } catch (Exception $e) {
-          die('Bir sorun var!: ' . $e->getMessage());
+          die($langDB['LANG_CATCH_PROBLEM']." ". $e->getMessage());
     }
 
