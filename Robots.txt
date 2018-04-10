@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /Manager/
+Disallow: /system/
+Disallow: /theme/
+Disallow: /uploads/
+Disallow: /phpMail/

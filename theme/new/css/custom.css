@@ -1,0 +1,35 @@
+/* CSS Document */
+
+/* Responsive Embed Youtube Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container map,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carText{
+    color: #824328;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Droid Serif', serif;
+}
+
+.contactTxt{
+    color:#d2ae7e;
+}
+.date{
+    color:#d2ae7e;
+    font-size: 9px;
+}
+

@@ -1,0 +1,41 @@
+<IfModule mod_rewrite.c>
+Options +Indexes +FollowSymLinks
+RewriteEngine On
+
+RewriteRule index.html$ index.php
+RewriteRule ^page/([0-9a-zA-Z-_]+).html$ index.php?do=pageDetails&link=$1
+RewriteRule ^car/([0-9a-zA-Z-_]+).html$ index.php?do=carDetails&link=$1
+RewriteRule ^notice/([0-9a-zA-Z-_]+).html$ index.php?do=noticeDetails&link=$1
+RewriteRule ^news/([0-9a-zA-Z-_]+).html$ index.php?do=newsDetails&link=$1
+RewriteRule ^video/([0-9a-zA-Z-_]+).html$ index.php?do=videoDetails&link=$1
+RewriteRule ^Videolar/Sayfa/([0-9a-zA-Z-_]+)(/?)$ index.php?do=Videolar&Sayfa=$1
+RewriteRule ^Resimler/Sayfa/([0-9a-zA-Z-_]+)(/?)$ index.php?do=Resimler&Sayfa=$1
+RewriteRule ^Referanslar/Sayfa/([0-9a-zA-Z-_]+)(/?)$ index.php?do=Referanslar&Sayfa=$1
+
+RewriteRule ^reservation.* index.php?do=reservation [NC]
+RewriteRule ^contact.* index.php?do=contact [NC]
+RewriteRule ^about.* index.php?do=about [NC]
+RewriteRule ^impressum.* index.php?do=impressum [NC]
+RewriteRule ^agb.* index.php?do=agb [NC]
+RewriteRule ^images.* index.php?do=images [NC]
+RewriteRule ^videos.* index.php?do=videos [NC]
+RewriteRule ^notices.* index.php?do=notices [NC]
+RewriteRule ^news.* index.php?do=news [NC]
+RewriteRule ^pages.* index.php?do=pages [NC]
+RewriteRule ^cars.* index.php?do=cars [NC]
+
+
+RewriteRule ^tr.* App/language.inc.php?lang=tr [NC]
+RewriteRule ^de.* App/language.inc.php?lang=de [NC]
+RewriteRule ^en.* App/language.inc.php?lang=en [NC]
+
+
+
+# all other cases
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule .+ - [L]
+#RewriteRule ^([0-9a-zA-Z-_]+)(/?)$ index.php?do=$1
+
+</IfModule>
